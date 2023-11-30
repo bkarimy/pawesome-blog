@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Pawesome Blog</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Contact Us - Pawesome Blog</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Blog</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Contact Information</h2>
+            <address>
+                <p>Email: contact@pawesomeblog.com</p>
+                <p>Mailing Address: 123 Pawesome Street, Petville</p>
+                <p>Phone: 123-456-7890</p>
+            </address>
+        </section>
+        <button id="backButton">Back to Blog</button>
+    </main>
+    <footer>
+        <p>&copy; 2023 Pawesome Blog</p>
+    </footer>
+    <script>
+        $(document).ready(function(){
+            $('#backButton').click(function(){
+                window.location.href = 'index.html';
+            });
+        });
+    </script>
+</body>
+</html>
