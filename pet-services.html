@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Services - Pawesome Blog</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Pet Services - Pawesome Blog</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="pet-services.html">Pet Services</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="grooming">
+            <h2>Grooming Services</h2>
+            <div class="grid-container">
+                <div class="grid-item">
+                    <h3>Basic Grooming</h3>
+                    <p>Includes bath, blow-dry, and brush-out.</p>
+                </div>
+                <div class="grid-item">
+                    <h3>Deluxe Grooming</h3>
+                    <p>Includes Basic Grooming plus nail trimming and ear cleaning.</p>
+                </div>
+                <div class="grid-item">
+                    <h3>Ultimate Grooming</h3>
+                    <p>Includes Deluxe Grooming plus teeth cleaning and a special treat.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="petsHotel">
+            <h2>Pets Hotel</h2>
+            <button class="collapsible">More Information</button>
+            <div class="content">
+                <p>Our Pets Hotel offers luxurious overnight accommodations, including comfy beds, 24/7 supervision, and playtime sessions.</p>
+            </div>
+        </section>
+
+        <section id="petDayCamp">
+            <h2>Pet Day Camp</h2>
+            <button class="collapsible">More Information</button>
+            <div class="content">
+                <p>Join us at Pet Day Camp for a day filled with fun activities, socialization, and exercise for your beloved pet.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Pawesome Blog</p>
+    </footer>
+
+    <script>
+        $(document).ready(function() {
+            $('.collapsible').click(function() {
+                this.classList.toggle('active');
+                var content = this.nextElementSibling;
+                if (content.style.display === "block") {
+                    content.style.display = "none";
+                } else {
+                    content.style.display = "block";
+                }
+            });
+        });
+    </script>
+</body>
+</html>
